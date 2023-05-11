@@ -12,17 +12,39 @@
 
     {% compress css %}
     <link rel="stylesheet" href="{% static 'src/output.css' %}">
+    <link rel="stylesheet" href="{% static 'src/mediaQueries.css' %}">
     {% endcompress %}
 
 </head>
 
-<body class="bg-green">
+<body class="mx-auto">
+    {% include "header.html" %}
     <div class="container mt-4">
         {% block content %}
         {% endblock content %}
     </div>
 
     {% include "footer.html" %}
+    {% block javascript %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // catch the form's submit event
+            $('#fuatilia_ombi').click(function () {
+             window.location.href = '/fuatilia_ombi'
+            });
+
+            $('#ombi_jipya').click(function () {
+             window.location.href = '/ombi_jipya'
+            });
+
+            $('#endeleza_ombi').click(function () {
+             window.location.href = '/endeleza_ombi'
+            });
+        })
+    </script>
+    {% endblock javascript %}
 </body>
 
 </html>
