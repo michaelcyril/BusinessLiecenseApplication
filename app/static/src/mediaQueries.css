@@ -1,0 +1,84 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .logo{
+    height: 2.5rem;
+    margin-right: 15px;
+  }
+  .service{
+    display: flex;
+    flex-direction: column;
+  }
+  .lablefooter{
+     font-size: small;
+  }
+  .lable{
+    font-size: large;
+  }
+  .services-section{
+    margin-left: 1%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .logo{
+        height: 4rem;
+        margin-right: 15px;
+      }
+      .service{
+        display: flex;
+        flex-direction: column;
+      }
+      .services-section{
+        margin-left: 3%;
+      }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .logo{
+        height: 4rem;
+        margin-right: 15px;
+      }
+
+      .service{
+        display: flex;
+        flex-direction: row;
+      }
+      .services-section{
+        margin-left: 5%;
+      }
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .logo{
+        height: 5rem;
+        margin-right: 15px;
+      }
+      .service{
+        display: flex;
+        flex-direction: row;
+      }
+      .services-section{
+        margin-left: 5%;
+      }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .service{
+        display: flex;
+        flex-direction: row;
+      }
+   .logo{
+    height: 4rem;
+   }
+
+   .services-section{
+    margin-left: 10%;
+  }
+
+}
