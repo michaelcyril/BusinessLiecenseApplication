@@ -74,3 +74,16 @@ class Tra(models.Model):
 
     class Meta:
         db_table = "tra"
+
+
+class ControlNumber(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    control_number = models.CharField(max_length=13)
+    is_paid = models.BooleanField(default=False)
+
+    def __str__(self):
+        return f'{self.control_number}'
+
+    class Meta:
+        db_table = 'control_number'
+
